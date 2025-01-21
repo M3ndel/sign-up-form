@@ -21,34 +21,36 @@
 				<br>
 				You know you want to.
 			</div>
-			<div class="application">
-				<form action="." method="post">
-					<legend>Let's do this!</legend>
-					<div class="info">
-						<div>
-							FIRST NAME<br>
-							<input><br>
-							<br>
-							EMAIL<br>
-							<input><br>
-							<br>
-							PASSWORD<br>
-							<input>
-						</div>
-						<div>
-							LAST NAME<br>
-							<input><br>
-							<br>
-							PHONE NUMBER<br>
-							<input><br>
-							<br>
-							CONFIRM PASSWORD<br>
-							<input>
-						</div>
+
+			<form action="https://www.google.com" method="post">
+				<div class="application">
+				<legend>Let's do this!</legend>
+				<div class="info">
+					<div>
+						FIRST NAME<br>
+						<input type="text" name="first_name" pattern="^[A-Za-z\s]+$"><br>
+						<br>
+						EMAIL<br>
+						<input type="email" name="email"><br>
+						<br>
+						PASSWORD<br>
+						<input type="password" id="password" name="password" required>
 					</div>
-				</form>
-			</div>
-			<button>Create Account</button>
+					<div>
+						LAST NAME<br>
+						<input type="text" name="last_name" pattern="^[A-Za-z\s]+$"><br>
+						<br>
+						PHONE NUMBER<br>
+						<input type="number" name="phone" pattern="^\d+$"><br>
+						<br>
+						CONFIRM PASSWORD<br>
+						<input type="password" id="confirm_password" name="confirm_password" required>
+					</div>
+				</div>
+				</div>
+				<button type="submit">Create Account</button>
+			</form>
+
 			<div class="redirect">
 				Already have an account? <a href="https://removenabil.github.io/amistupid/">Then wtf are you doing here?</a>
 			</div>

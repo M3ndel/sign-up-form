@@ -54,7 +54,33 @@ legend {
 
 .info {
 	display: flex;
-	gap: 100px
+	gap: 100px;
+	font-weight: 400;
+}
+
+input {
+	outline: none;
+	border: #E5E7EB 1px solid;
+	padding: 5px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+input:focus {
+	box-shadow: 2px 2px 3px gray;
+	border: #0550e7 1px solid;
+}
+
+#password:invalid, #confirm_password:invalid {
+	border: red 1px solid;
 }
 
 button {
@@ -69,6 +95,11 @@ button {
 	border-color: none;
 
 	border: none;
+}
+
+button:active {
+	transform: scale(0.98);
+	box-shadow: none;
 }
 
 .redirect {
